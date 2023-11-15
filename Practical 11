@@ -1,0 +1,13 @@
+START1: INP
+        SZA
+        BUN START2
+        BUN END
+
+START2: ADD SUM
+        STA SUM
+        BUN START1
+
+END:LDA SUM
+    OUT
+    HLT
+SUM:.data 2 0
